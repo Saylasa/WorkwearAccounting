@@ -1,0 +1,41 @@
+﻿<Window x:Class="WorkwearAccounting.AddRevenueWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkwearAccounting"
+        mc:Ignorable="d"
+        Title="AddRevenueWindow"  Height="433.331" Width="640.425">
+    <Grid>
+        <Label Content="Размер одежды:" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbWorkwear" HorizontalAlignment="Left" Margin="169,107,0,0" VerticalAlignment="Top" Width="146" ItemsSource="{Binding}" DisplayMemberPath="Name"/>
+
+        <Button x:Name="btnSave" Content="Сохранить" HorizontalAlignment="Left" Margin="5,364,0,0" VerticalAlignment="Top" Width="91" Height="29" Click="btnSave_Click"/>
+        <Button x:Name="btnCancel" Content="Отмена" HorizontalAlignment="Left" Margin="101,364,0,0" VerticalAlignment="Top" Width="86" Height="29"/>
+        <Label Content="Дата прихода:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbAmount_Copy" HorizontalAlignment="Left" Height="23" Margin="169,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
+        <Label Content="Размер обуви:" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbWorkwear_Copy" HorizontalAlignment="Left" Margin="169,80,0,0" VerticalAlignment="Top" Width="146" ItemsSource="{Binding}" DisplayMemberPath="Name"/>
+        <Label Content="Размер перчаток:" HorizontalAlignment="Left" Margin="10,132,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbWorkwear_Copy1" HorizontalAlignment="Left" Margin="169,134,0,0" VerticalAlignment="Top" Width="146" ItemsSource="{Binding}" DisplayMemberPath="Name" />
+        <Label Content="Размер головного убора:" HorizontalAlignment="Left" Margin="10,159,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbWorkwear_Copy2" HorizontalAlignment="Left" Margin="169,161,0,0" VerticalAlignment="Top" Width="146" ItemsSource="{Binding}" DisplayMemberPath="Name"/>
+        <Button x:Name="btnSave_Copy" Content="Добавить ед. СИЗ в справочник" HorizontalAlignment="Left" Margin="411,10,0,0" VerticalAlignment="Top" Width="211" Height="29"/>
+        <Label Content="Единица СИЗ:" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbWorkwear_Copy3" HorizontalAlignment="Left" Margin="169,53,0,0" VerticalAlignment="Top" Width="146" ItemsSource="{Binding}" DisplayMemberPath="Name"/>
+
+        <DataGrid x:Name="dgEmplPosition" IsReadOnly="True" AutoGenerateColumns="False" Visibility="Visible" Margin="10,190,10,45">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Название" Binding="{Binding Path=Name}" />
+                <DataGridTextColumn Header="Описание" Binding="{Binding Path=Manufactory.Name}" />
+                <DataGridTextColumn Header="Время носки" Binding="{Binding Path=Manufactory.Name}" />
+                <DataGridTextColumn Header="Ед. изм." Binding="{Binding Path=Manufactory.Name}" />
+                <DataGridTextColumn Header="Описание" Binding="{Binding Path=Manufactory.Name}" />
+                <DataGridTextColumn Header="Дата поступления" Binding="{Binding Path=Manufactory.Name}" />
+                <DataGridTextColumn Header="Размер" Binding="{Binding Path=Manufactory.Name}" />
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnSave_Copy1" Content="Добавить" HorizontalAlignment="Left" Margin="509,147,0,0" VerticalAlignment="Top" Width="113" Height="36"/>
+    </Grid>
+</Window>

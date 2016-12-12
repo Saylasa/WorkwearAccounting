@@ -1,0 +1,49 @@
+﻿<Window x:Class="WorkwearAccounting.ModuleThree"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkwearAccounting"
+        mc:Ignorable="d"
+        Title="ModuleThree" Height="700" Width="1050" WindowState="Maximized">
+    <Grid>
+        <Menu Height="25" HorizontalAlignment="Stretch" Name="mainMenu" VerticalAlignment="Top" Grid.ColumnSpan="3">
+            <MenuItem Name="DataBase" Header="База данных">
+                <MenuItem Name="dataBaseS" Header="Настроить соединение с имеющейся БД"/>
+            </MenuItem>
+            <MenuItem Name="Reports" Header="Отчеты">
+                <MenuItem Name="ExelExporterButton" Header="Экспорт таблицы Excel" />
+            </MenuItem>
+            <MenuItem Name = "About" Header="О программе" ></MenuItem>
+        </Menu>
+
+        <DataGrid x:Name="dgNorm" IsReadOnly="True" AutoGenerateColumns="False" Visibility="Visible" Margin="10,115,10,45">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding Path=EmplPosition.Name}" />
+                <DataGridTextColumn Header="Имя" Binding="{Binding Path=WorkwearDirectory.Name}" />
+                <DataGridTextColumn Header="Отчество" Binding="{Binding Path=WorkwearDirectory.Category}" />
+                <DataGridTextColumn Header="Пол" Binding="{Binding Path=WorkwearDirectory.Description}" />
+                <DataGridTextColumn Header="Цех" Binding="{Binding Path=WorkwearDirectory.Unit}" />
+                <DataGridTextColumn Header="Должность" Binding="{Binding Path=WorkwearDirectory.Unit}" />
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <DataGrid x:Name="dgEmplPosition" IsReadOnly="True" AutoGenerateColumns="False" Visibility="Hidden" Margin="83,74,57,45">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Название" Binding="{Binding Path=Name}" />
+                <DataGridTextColumn Header="Цех" Binding="{Binding Path=Manufactory.Name}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnRefresh" Content="Обновить" HorizontalAlignment="Left" Margin="379,58,0,0" VerticalAlignment="Top" Width="76" Height="23"/>
+        <Button x:Name="btnSearchP" Content="Поиск" HorizontalAlignment="Left" Margin="320,58,0,0" VerticalAlignment="Top" Width="54" Height="22" Click="btnSearchP_Click" />
+        <Label x:Name="lblNameP" Content="Должность:" HorizontalAlignment="Left" Margin="18,55,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbEmplPosition" HorizontalAlignment="Left" Margin="95,58,0,0" VerticalAlignment="Top" Width="220" ItemsSource="{Binding}" DisplayMemberPath="Name" />
+        <Button x:Name="btnSearchN" Content="Поиск" HorizontalAlignment="Left" Margin="320,85,0,0" VerticalAlignment="Top" Width="54" Height="22" />
+        <Label x:Name="lblName" Content="Фамилия:" HorizontalAlignment="Left" Margin="18,82,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbEmplPosition_Copy" HorizontalAlignment="Left" Margin="95,85,0,0" VerticalAlignment="Top" Width="220" ItemsSource="{Binding}" DisplayMemberPath="Name" />
+        <Button x:Name="btnOpenCard" Content="Карта учета" HorizontalAlignment="Left" Margin="532,74,0,0" VerticalAlignment="Top" Width="155" Height="34" Click="btnOpenCard_Click" />
+
+
+    </Grid>
+</Window>

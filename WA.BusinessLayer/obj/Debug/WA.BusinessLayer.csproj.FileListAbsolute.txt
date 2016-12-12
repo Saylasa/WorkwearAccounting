@@ -1,0 +1,11 @@
+D:\GIT\WorkwearAccounting\WA.BusinessLayer\obj\Debug\WA.BusinessLayer.csprojResolveAssemblyReference.cache
+D:\GIT\WorkwearAccounting\WA.BusinessLayer\obj\Debug\WA.BusinessLayer.Properties.Resources.resources
+D:\GIT\WorkwearAccounting\WA.BusinessLayer\obj\Debug\WA.BusinessLayer.csproj.GenerateResource.Cache
+D:\GIT\WorkwearAccounting\WA.BusinessLayer\bin\Debug\WA.BusinessLayer.dll
+D:\GIT\WorkwearAccounting\WA.BusinessLayer\bin\Debug\WA.BusinessLayer.pdb
+D:\GIT\WorkwearAccounting\WA.BusinessLayer\bin\Debug\WA.DataAccess.dll
+D:\GIT\WorkwearAccounting\WA.BusinessLayer\bin\Debug\WA.Dto.dll
+D:\GIT\WorkwearAccounting\WA.BusinessLayer\bin\Debug\WA.DataAccess.pdb
+D:\GIT\WorkwearAccounting\WA.BusinessLayer\bin\Debug\WA.Dto.pdb
+D:\GIT\WorkwearAccounting\WA.BusinessLayer\obj\Debug\WA.BusinessLayer.dll
+D:\GIT\WorkwearAccounting\WA.BusinessLayer\obj\Debug\WA.BusinessLayer.pdb

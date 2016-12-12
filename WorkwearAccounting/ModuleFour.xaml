@@ -1,0 +1,34 @@
+﻿<Window x:Class="WorkwearAccounting.ModuleFour"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkwearAccounting"
+        mc:Ignorable="d"
+        Title="ModuleFour" Height="700" Width="1050" WindowState="Maximized">
+    <Grid>
+        <Menu Height="25" HorizontalAlignment="Stretch" Name="mainMenu" VerticalAlignment="Top" Grid.ColumnSpan="3">
+            <MenuItem Name="DataBase" Header="База данных">
+                <MenuItem Name="dataBaseS" Header="Настроить соединение с имеющейся БД"/>
+            </MenuItem>
+            <MenuItem Name="Reports" Header="Отчеты">
+                <MenuItem Name="ExelExporterButton" Header="Экспорт таблицы Excel" />
+            </MenuItem>
+            <MenuItem Name = "About" Header="О программе" ></MenuItem>
+        </Menu>
+
+        <DataGrid x:Name="dgNorm" IsReadOnly="True" AutoGenerateColumns="False" Visibility="Visible" Margin="10,115,10,45">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер" Binding="{Binding Path=EmplPosition.Name}" />
+                <DataGridTextColumn Header="Название" Binding="{Binding Path=WorkwearDirectory.Name}" />
+                <DataGridTextColumn Header="Дата прихода" Binding="{Binding Path=WorkwearDirectory.Category}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnRefresh" Content="Обновить" HorizontalAlignment="Left" Margin="379,58,0,0" VerticalAlignment="Top" Width="76" Height="23"/>
+        <Button x:Name="btnSearchP" Content="Поиск" HorizontalAlignment="Left" Margin="320,58,0,0" VerticalAlignment="Top" Width="54" Height="22" />
+        <Label x:Name="lblNameP" Content="Должность:" HorizontalAlignment="Left" Margin="18,55,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbEmplPosition" HorizontalAlignment="Left" Margin="95,58,0,0" VerticalAlignment="Top" Width="220" ItemsSource="{Binding}" DisplayMemberPath="Name" />
+        <Button x:Name="btnOpenRevenue" Content="Новый приходной ордер" HorizontalAlignment="Left" Margin="877,70,0,0" VerticalAlignment="Top" Width="155" Height="34"  />
+
+    </Grid>
+</Window>

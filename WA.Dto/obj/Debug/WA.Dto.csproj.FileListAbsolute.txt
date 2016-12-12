@@ -1,0 +1,4 @@
+D:\GIT\WorkwearAccounting\WA.Dto\bin\Debug\WA.Dto.dll
+D:\GIT\WorkwearAccounting\WA.Dto\bin\Debug\WA.Dto.pdb
+D:\GIT\WorkwearAccounting\WA.Dto\obj\Debug\WA.Dto.dll
+D:\GIT\WorkwearAccounting\WA.Dto\obj\Debug\WA.Dto.pdb

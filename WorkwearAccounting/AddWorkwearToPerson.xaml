@@ -1,0 +1,22 @@
+﻿<Window x:Class="WorkwearAccounting.AddWorkwearToPerson"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkwearAccounting"
+        mc:Ignorable="d"
+        Title="AddWorkwearToPerson" Height="314.894" Width="473.404">
+    <Grid>
+        <DataGrid x:Name="dgEmplPosition" IsReadOnly="True" AutoGenerateColumns="False" Visibility="Visible" Margin="10,10,10,41">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер" Binding="{Binding Path=Name}" Width="60"/>
+                <DataGridTextColumn Header="Название" Binding="{Binding Path=Manufactory.Name}" Width="100" />
+                <DataGridTextColumn Header="Описание" Binding="{Binding Path=Manufactory.Name}" Width="250"/>
+                <DataGridTextColumn Header="Ед." Binding="{Binding Path=Manufactory.Name}" Width="60"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnSelect" Content="Выбор" HorizontalAlignment="Left" Height="23" Margin="10,252,0,0" VerticalAlignment="Top" Width="79"/>
+        <Button x:Name="btnCancel" Content="Отмена" HorizontalAlignment="Left" Height="23" Margin="94,252,0,0" VerticalAlignment="Top" Width="79"/>
+    </Grid>
+</Window>

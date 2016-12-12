@@ -1,0 +1,5 @@
+D:\GIT\WorkwearAccounting\WA.DataAccess\bin\Debug\WA.DataAccess.dll
+D:\GIT\WorkwearAccounting\WA.DataAccess\bin\Debug\WA.DataAccess.pdb
+D:\GIT\WorkwearAccounting\WA.DataAccess\obj\Debug\WA.DataAccess.dll
+D:\GIT\WorkwearAccounting\WA.DataAccess\obj\Debug\WA.DataAccess.pdb
+D:\GIT\WorkwearAccounting\WA.DataAccess\obj\Debug\WA.DataAccess.csprojResolveAssemblyReference.cache

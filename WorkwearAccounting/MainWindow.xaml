@@ -1,0 +1,20 @@
+﻿<Window x:Class="WorkwearAccounting.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkwearAccounting"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="219.681" Width="292.908">
+    <Grid>
+        <Button x:Name="btnModul1" Content="Модуль ввода цеховых норм" HorizontalAlignment="Left" Height="38" Margin="10,10,0,0" VerticalAlignment="Top" Width="263" Click="btnModul1_Click"/>
+        <Button x:Name="btnModul2" Content="Модуль карточки складского учета" HorizontalAlignment="Left" Height="38" Margin="10,53,0,0" VerticalAlignment="Top" Width="263" Click="btnModul2_Click"/>
+        <Button x:Name="btnModul3" Content="Модуль выдачи СИЗ" HorizontalAlignment="Left" Height="38" Margin="10,96,0,0" VerticalAlignment="Top" Width="263" Click="btnModul3_Click"/>
+        <Button x:Name="btnModul4" Content="Бухгалтерия" HorizontalAlignment="Left" Height="38" Margin="10,139,0,0" VerticalAlignment="Top" Width="263" Click="btnModul4_Click"/>
+
+
+
+
+
+    </Grid>
+</Window>

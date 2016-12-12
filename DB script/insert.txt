@@ -1,0 +1,66 @@
+insert into WORKWEAR_DIRECTORY 
+values ('Противогаз в сборе','СИЗ','ГОСТ 12.4.041-89, ТУ 6-00-03795731-98', 36, 'шт.');
+insert into WORKWEAR_DIRECTORY 
+values ('Куртка на утепленной прокладке','Одежда','ГОСТ 29335-92, ГОСТ 12.4.084-80', 60, 'шт.');
+insert into WORKWEAR_DIRECTORY 
+values ('Полуботинки','Обувь','ГОСТ 12.4.137-84', 36, 'пара');
+insert into WORKWEAR_DIRECTORY 
+values ('Костюм ХБ','СИЗ','ГОСТ 2.75.75-87', 36, 'шт.');
+insert into WORKWEAR_DIRECTORY 
+values ('Сандалии "Троя"','СИЗ','ГОСТ 12.4.137-84', 24, 'пара');
+insert into WORKWEAR_DIRECTORY 
+values ('Халат ХБ','СИЗ','ГОСТ 12.4.131-83', 24, 'шт.');
+insert into WORKWEAR_DIRECTORY 
+values ('Перчатки ХБ с латексным покрытием','СИЗ','Защитные свойства "МиМп" ТУ 0300142-45-91', 3, 'пара');
+values ('Ботинки юфтефые','СИЗ','ГОСТ 12.4.041-89,литьевой метод крепления МБК и КЦС', 36, 'пара');
+insert into WORKWEAR_DIRECTORY 
+values ('Каска защитная','СИЗ','ГОСТ 12.4.128-99, защита головы', 60, 'шт.');
+insert into WORKWEAR_DIRECTORY 
+values ('Плащ непромокаемый с капюшоном','СИЗ','ГОСТ 12.4.134-83, защитные свойства "В"', 60, 'шт.');
+insert into WORKWEAR_DIRECTORY 
+values ('Ботинки кожанные утепленные','СИЗ','ГОСТ 5394-89, защитные свойства "МпНм', 36, 'пара');
+
+
+
+insert into MANUFACTORY 
+values ('Цех азотной кислоты');
+insert into MANUFACTORY 
+values ('Цех аммиачной селитры');
+insert into MANUFACTORY 
+values ('ЦИТ');
+
+
+insert into EMPL_POSITION 
+values ('Аппаратчик абсорбции', 1);
+insert into EMPL_POSITION 
+values ('Аппаратчик окисления', 2);
+insert into EMPL_POSITION 
+values ('Руководитель центра ИТ', 3);
+insert into EMPL_POSITION 
+values ('Заведующий хозяйством', 3);
+insert into EMPL_POSITION 
+values ('Заместитель руководителя ЦИТ', 3);
+
+
+
+insert into PERSON 
+values ('Гореев', 'Олег', 'Викторович', 'М', 5, 48, 60, 12, '60-62', 1);
+insert into PERSON 
+values ('Иванова', 'Тамара', 'Семеновна', 'Ж', 3, 39, 56, 8, '40-42', 4);
+insert into PERSON 
+values ('Краснов', 'Михаил', 'Александрович', 'М', 5, 46, 59, 11, '48-50', 3);
+
+
+
+insert into REVENUE (Date_revenue, Clothing_size, Shoe_size, Size_headdress, Size_glove, ID_Workwear)
+values ('10.10.2016', '40-42', null, null, null, 2);
+insert into REVENUE (Date_revenue, Clothing_size, Shoe_size, Size_headdress, Size_glove, ID_Workwear)
+values ('10.10.2016', '40-42', null, null, null, 2);
+insert into REVENUE (Date_revenue, Clothing_size, Shoe_size, Size_headdress, Size_glove, ID_Workwear)
+values ('10.10.2016', '40-42', null, null, null, 2);
+insert into REVENUE (Date_revenue, Clothing_size, Shoe_size, Size_headdress, Size_glove, ID_Workwear)
+values ('10.10.2016', null, null, 56, null, 1);
+insert into REVENUE (Date_revenue, Clothing_size, Shoe_size, Size_headdress, Size_glove, ID_Workwear)
+values ('10.10.2016', null, null, 56, null, 1);
+insert into REVENUE (Date_revenue, Clothing_size, Shoe_size, Size_headdress, Size_glove, ID_Workwear)
+values ('10.10.2016', null, null, 56, null, 1);

@@ -43,8 +43,10 @@
   <ItemGroup>
     <Compile Include="DtoConverter.cs" />
     <Compile Include="EmplPositionProcessDB.cs" />
+    <Compile Include="IssueProcessDB.cs" />
     <Compile Include="ManufactoryProcessDB.cs" />
     <Compile Include="NormProcessDB.cs" />
+    <Compile Include="PersonProcessDB.cs" />
     <Compile Include="ProcessFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -52,6 +54,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="RevenueProcessDB.cs" />
     <Compile Include="SettingProcess.cs" />
     <Compile Include="WorkwearDirectoryProcessDB.cs" />
   </ItemGroup>

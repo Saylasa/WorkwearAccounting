@@ -43,11 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CancellationDao.cs" />
     <Compile Include="DaoFactory.cs" />
     <Compile Include="EmplPositionDao.cs" />
+    <Compile Include="IssuedDao.cs" />
     <Compile Include="ManufactoryDao.cs" />
     <Compile Include="NormDao.cs" />
     <Compile Include="PersonDao.cs" />
+    <Compile Include="RevenueDao.cs" />
     <Compile Include="SettingDao.cs" />
     <Compile Include="Entities\Cancellation.cs" />
     <Compile Include="Entities\EmplPosition.cs" />

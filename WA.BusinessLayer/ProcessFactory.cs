@@ -22,13 +22,24 @@
             return new ManufactoryProcessDB();
         }
 
+        public static PersonProcessDB GetPersonProcessDB()
+        {
+            return new PersonProcessDB();
+        }
+
+        public static IssueProcessDB GetIssuedProcessDB()
+        {
+            return new IssueProcessDB();
+        }
+
+        public static RevenueProcessDB GetRevenueProcessDB()
+        {
+            return new RevenueProcessDB();
+        }
+
         public static SettingProcess GetSettingProcess()
         {
             return new SettingProcess();
         }
-
-        
-
-
     }
 }

@@ -14,10 +14,10 @@ namespace WA.DataAccess.Entities
         public string Patronymic;
         public string Sex;
         public int Height;
-        public int ShoeSize;
+        public string ShoeSize;
         public int SizeHeadDress;
-        public int SizeGlove;
-        public int ClothingSize;
-        public int Id_Norm;
+        public string SizeGlove;
+        public string ClothingSize;
+        public int Id_Position;
     }
 }

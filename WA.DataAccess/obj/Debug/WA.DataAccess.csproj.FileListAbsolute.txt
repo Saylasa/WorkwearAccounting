@@ -3,3 +3,10 @@ D:\GIT\WorkwearAccounting\WA.DataAccess\bin\Debug\WA.DataAccess.pdb
 D:\GIT\WorkwearAccounting\WA.DataAccess\obj\Debug\WA.DataAccess.dll
 D:\GIT\WorkwearAccounting\WA.DataAccess\obj\Debug\WA.DataAccess.pdb
 D:\GIT\WorkwearAccounting\WA.DataAccess\obj\Debug\WA.DataAccess.csprojResolveAssemblyReference.cache
+D:\GitHub\WorkwearAccounting\WA.DataAccess\bin\Debug\WA.DataAccess.dll
+D:\GitHub\WorkwearAccounting\WA.DataAccess\bin\Debug\WA.DataAccess.pdb
+D:\GitHub\WorkwearAccounting\WA.DataAccess\bin\Debug\System.Net.Http.dll
+D:\GitHub\WorkwearAccounting\WA.DataAccess\bin\Debug\System.Net.Http.xml
+D:\GitHub\WorkwearAccounting\WA.DataAccess\obj\Debug\WA.DataAccess.csprojResolveAssemblyReference.cache
+D:\GitHub\WorkwearAccounting\WA.DataAccess\obj\Debug\WA.DataAccess.dll
+D:\GitHub\WorkwearAccounting\WA.DataAccess\obj\Debug\WA.DataAccess.pdb

@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\GIT\WorkwearAccounting\WorkwearAccounting\obj\Debug\
+D:\GitHub\WorkwearAccounting\WorkwearAccounting\obj\Debug\
 WorkwearAccounting
 none
 false
 DEBUG;TRACE
-D:\GIT\WorkwearAccounting\WorkwearAccounting\App.xaml
+D:\GitHub\WorkwearAccounting\WorkwearAccounting\App.xaml
 12-1298510014
 
-171339035918
-14-2034268516
+17143034456
+14-840981390
 AddNormWindow.xaml;AddPersonWindow.xaml;AddRevenueWindow.xaml;AddWorkwearToPerson.xaml;MainWindow.xaml;ModuleFour.xaml;ModuleThree.xaml;ModuleTwo.xaml;ModulOne.xaml;PersonCardWindow.xaml;SearchNormWindow.xaml;SettingsWindow.xaml;
 
 False

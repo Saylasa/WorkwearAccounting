@@ -1,15 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using WA.BusinessLayer;
+using WA.Dto;
 
 namespace WorkwearAccounting
 {
@@ -21,6 +15,43 @@ namespace WorkwearAccounting
         public AddWorkwearToPerson()
         {
             InitializeComponent();
+        }
+
+        public void Load(PersonDto personDto)
+        {
+            if (personDto == null)
+                return;
+            this.FindedRevenue = ProcessFactory.GetRevenueProcessDB().SearchRevenue();
+            this.dgRevenue.ItemsSource = FindedRevenue;
+            person = personDto;
+        }
+
+        public IList<RevenueDto> FindedRevenue;
+        private PersonDto person = new PersonDto();
+
+        private void btnSelect_Click(object sender, RoutedEventArgs e)
+        {
+            if (dgRevenue.SelectedItem == null)
+            {
+                MessageBox.Show("Выберете запись");
+                return;
+            }
+            IssuedDto issuedDto = new IssuedDto
+            {
+                Revenue = (RevenueDto) dgRevenue.SelectedItem,
+                Cancellation = false,
+                Date_Issued = DateTime.Now,
+                Person = person,
+            };
+
+            IssueProcessDB issuedProcessDB = ProcessFactory.GetIssuedProcessDB();
+            issuedProcessDB.Add(issuedDto);
+            this.Close();
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

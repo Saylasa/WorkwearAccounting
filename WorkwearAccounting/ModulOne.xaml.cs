@@ -4,8 +4,6 @@ using WA.Dto;
 using System.Linq;
 using System.Collections.Generic;
 
-
-
 namespace WorkwearAccounting
 {
     /// <summary>
@@ -46,30 +44,30 @@ namespace WorkwearAccounting
             window.ShowDialog();
         }
 
-        private void btnEmplPosition_Click(object sender, RoutedEventArgs e)
-        {
-            dgNorm.Visibility = Visibility.Hidden;
-            dgEmplPosition.Visibility = Visibility.Visible;
-            btnRefreshE_Click(sender, e);
-            this.btnAdd.Visibility = Visibility.Collapsed;
-            this.btnEdit.Visibility = Visibility.Hidden;
-            this.btnDelete.Visibility = Visibility.Hidden;
-            this.btnSearch.Visibility = Visibility.Hidden;
-            this.btnRefresh.Visibility = Visibility.Visible;
-        }
+        //private void btnEmplPosition_Click(object sender, RoutedEventArgs e)
+        //{
+        //    dgNorm.Visibility = Visibility.Hidden;
+        //    dgEmplPosition.Visibility = Visibility.Visible;
+        //    btnRefreshE_Click(sender, e);
+        //    this.btnAdd.Visibility = Visibility.Collapsed;
+        //    this.btnEdit.Visibility = Visibility.Hidden;
+        //    this.btnDelete.Visibility = Visibility.Hidden;
+        //    this.btnSearch.Visibility = Visibility.Hidden;
+        //    this.btnRefresh.Visibility = Visibility.Visible;
+        //}
 
-        private void btnNorm_Click(object sender, RoutedEventArgs e)
-        {
-            dgNorm.Visibility = Visibility.Visible;
-            dgEmplPosition.Visibility = Visibility.Hidden;
-            btnRefreshN_Click(sender, e);
-            this.btnAdd.Visibility = Visibility.Visible;
-            this.btnEdit.Visibility = Visibility.Visible;
-            this.btnDelete.Visibility = Visibility.Visible;
-            this.btnRefresh.Visibility = Visibility.Visible;
-            this.btnSearch.Visibility = Visibility.Visible;
+        //private void btnNorm_Click(object sender, RoutedEventArgs e)
+        //{
+        //    dgNorm.Visibility = Visibility.Visible;
+        //    dgEmplPosition.Visibility = Visibility.Hidden;
+        //    btnRefreshN_Click(sender, e);
+        //    this.btnAdd.Visibility = Visibility.Visible;
+        //    this.btnEdit.Visibility = Visibility.Visible;
+        //    this.btnDelete.Visibility = Visibility.Visible;
+        //    this.btnRefresh.Visibility = Visibility.Visible;
+        //    this.btnSearch.Visibility = Visibility.Visible;
 
-        }
+        //}
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
@@ -97,7 +95,7 @@ namespace WorkwearAccounting
             NormDto item = dgNorm.SelectedItem as NormDto;
             if (item == null)
             {
-                MessageBox.Show("Выберите запись для удаления", "Удаление запчасти");
+                MessageBox.Show("Выберите запись для удаления", "Удаление нормы");
                 return;
             }
             MessageBoxResult result = MessageBox.Show("Удалить норму " + item.WorkwearDirectory.Name + "?", "Удаление нормы", MessageBoxButton.YesNo, MessageBoxImage.Warning);

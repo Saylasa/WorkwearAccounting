@@ -2,3 +2,10 @@ D:\GIT\WorkwearAccounting\WA.Dto\bin\Debug\WA.Dto.dll
 D:\GIT\WorkwearAccounting\WA.Dto\bin\Debug\WA.Dto.pdb
 D:\GIT\WorkwearAccounting\WA.Dto\obj\Debug\WA.Dto.dll
 D:\GIT\WorkwearAccounting\WA.Dto\obj\Debug\WA.Dto.pdb
+D:\GitHub\WorkwearAccounting\WA.Dto\bin\Debug\WA.Dto.dll
+D:\GitHub\WorkwearAccounting\WA.Dto\bin\Debug\WA.Dto.pdb
+D:\GitHub\WorkwearAccounting\WA.Dto\bin\Debug\System.Net.Http.dll
+D:\GitHub\WorkwearAccounting\WA.Dto\bin\Debug\System.Net.Http.xml
+D:\GitHub\WorkwearAccounting\WA.Dto\obj\Debug\WA.Dto.csprojResolveAssemblyReference.cache
+D:\GitHub\WorkwearAccounting\WA.Dto\obj\Debug\WA.Dto.dll
+D:\GitHub\WorkwearAccounting\WA.Dto\obj\Debug\WA.Dto.pdb

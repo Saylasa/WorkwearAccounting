@@ -14,10 +14,10 @@ namespace WA.Dto
         public string Patronymic { get; set; }
         public string Sex { get; set; }
         public int Height { get; set; }
-        public int ShoeSize { get; set; }
+        public string ShoeSize { get; set; }
         public int SizeHeadDress { get; set; }
-        public int SizeGlove { get; set; }
-        public int ClothingSize { get; set; }
-        public NormDto Norm { get; set; }
+        public string SizeGlove { get; set; }
+        public string ClothingSize { get; set; }
+        public EmplPositionDto Position { get; set; }
     }
 }

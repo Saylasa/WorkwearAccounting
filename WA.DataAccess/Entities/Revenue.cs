@@ -9,7 +9,7 @@ namespace WA.DataAccess.Entities
     public class Revenue
     {
         public int Id;
-        public bool Issued;
+        public bool Issued = false;
         public DateTime Date_Revenue;
         public string Clothing_size;
         public int Shoe_size;

@@ -5,32 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WorkwearAccounting"
         mc:Ignorable="d"
-        Title="AddPersonWindow" Height="369.501" Width="329.787">
+        Title="Добавление данных ФЛ" Height="369.501" Width="329.787">
     <Grid>
         <Label Content="Должность*:" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top"/>
         <Label Content="Размер одежды*:" HorizontalAlignment="Left" Margin="10,176,0,0" VerticalAlignment="Top"/>
         <Label Content="Рост*:" HorizontalAlignment="Left" Margin="10,259,0,0" VerticalAlignment="Top"/>
 
-        <TextBox x:Name="tbAmount" HorizontalAlignment="Left" Height="23" Margin="169,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
+        <TextBox x:Name="tbHight" HorizontalAlignment="Left" Height="23" Margin="169,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
         <ComboBox x:Name="cbEmplPosition" HorizontalAlignment="Left" Margin="169,124,0,0" VerticalAlignment="Top" Width="146" ItemsSource="{Binding}" DisplayMemberPath="Name"/>
-        <ComboBox x:Name="cbWorkwear" HorizontalAlignment="Left" Margin="169,178,0,0" VerticalAlignment="Top" Width="146" ItemsSource="{Binding}" DisplayMemberPath="Name"/>
+        <ComboBox x:Name="cbWorkwearClothes" HorizontalAlignment="Left" Margin="169,178,0,0" VerticalAlignment="Top" Width="146" ItemsSource="{Binding}" />
 
-        <Button x:Name="btnSave" Content="Сохранить" HorizontalAlignment="Left" Margin="10,298,0,0" VerticalAlignment="Top" Width="138" Height="29"/>
-        <Button x:Name="btnCancel" Content="Отмена" HorizontalAlignment="Left" Margin="174,298,0,0" VerticalAlignment="Top" Width="138" Height="29"/>
+        <Button x:Name="btnSave" Content="Сохранить" HorizontalAlignment="Left" Margin="10,298,0,0" VerticalAlignment="Top" Width="138" Height="29" Click="btnSave_Click"/>
+        <Button x:Name="btnCancel" Content="Отмена" HorizontalAlignment="Left" Margin="174,298,0,0" VerticalAlignment="Top" Width="138" Height="29" Click="btnCancel_Click"/>
         <Label Content="Фамилия*:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbAmount_Copy" HorizontalAlignment="Left" Height="23" Margin="169,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
+        <TextBox x:Name="tbSurname" HorizontalAlignment="Left" Height="23" Margin="169,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
         <Label Content="Имя*:" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbAmount_Copy1" HorizontalAlignment="Left" Height="23" Margin="169,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
+        <TextBox x:Name="tbName" HorizontalAlignment="Left" Height="23" Margin="169,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
         <Label Content="Отчество*:" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbAmount_Copy2" HorizontalAlignment="Left" Height="23" Margin="169,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
+        <TextBox x:Name="tbPatronymic" HorizontalAlignment="Left" Height="23" Margin="169,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
         <Label Content="Пол*:" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cbEmplPosition_Copy" HorizontalAlignment="Left" Margin="169,97,0,0" VerticalAlignment="Top" Width="146" ItemsSource="{Binding}" DisplayMemberPath="Name"/>
+        <ComboBox x:Name="cbSex" HorizontalAlignment="Left" Margin="169,97,0,0" VerticalAlignment="Top" Width="146" ItemsSource="{Binding}"/>
         <Label Content="Размер обуви*:" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cbWorkwear_Copy" HorizontalAlignment="Left" Margin="169,151,0,0" VerticalAlignment="Top" Width="146" ItemsSource="{Binding}" DisplayMemberPath="Name"/>
+        <ComboBox x:Name="cbShoes" HorizontalAlignment="Left" Margin="169,151,0,0" VerticalAlignment="Top" Width="146" ItemsSource="{Binding}"/>
         <Label Content="Размер перчаток*:" HorizontalAlignment="Left" Margin="10,203,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cbWorkwear_Copy1" HorizontalAlignment="Left" Margin="169,205,0,0" VerticalAlignment="Top" Width="146" ItemsSource="{Binding}" DisplayMemberPath="Name" SelectionChanged="cbWorkwear_Copy1_SelectionChanged"/>
+        <ComboBox x:Name="cbGloves" HorizontalAlignment="Left" Margin="169,205,0,0" VerticalAlignment="Top" Width="146" ItemsSource="{Binding}"/>
         <Label Content="Размер головного убора*:" HorizontalAlignment="Left" Margin="10,230,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cbWorkwear_Copy2" HorizontalAlignment="Left" Margin="169,232,0,0" VerticalAlignment="Top" Width="146" ItemsSource="{Binding}" DisplayMemberPath="Name"/>
+        <ComboBox x:Name="cbHead" HorizontalAlignment="Left" Margin="169,232,0,0" VerticalAlignment="Top" Width="146" ItemsSource="{Binding}"/>
 
     </Grid>
 </Window>

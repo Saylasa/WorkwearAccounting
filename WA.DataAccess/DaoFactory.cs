@@ -23,8 +23,25 @@ namespace WA.DataAccess
             return new ManufactoryDao();
         }
 
+        public static RevenueDao GetRevenueDao()
+        {
+            return new RevenueDao();
+        }
 
+        public static IssuedDao GetIssuedDao()
+        {
+            return new IssuedDao();
+        }
 
+        public static CancellationDao GetCancellationDao()
+        {
+            return new CancellationDao();
+        }
+
+        public static PersonDao GetPersonDao()
+        {
+            return new PersonDao();
+        }
 
         public static SettingDao GetSettingDao()
         {

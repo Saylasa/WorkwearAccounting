@@ -17,14 +17,14 @@
             <MenuItem Name = "About" Header="О программе" ></MenuItem>
         </Menu>
 
-        <DataGrid x:Name="dgNorm" IsReadOnly="True" AutoGenerateColumns="False" Visibility="Visible" Margin="10,115,10,45">
+        <DataGrid x:Name="dgPerson" IsReadOnly="True" AutoGenerateColumns="False" Visibility="Visible" Margin="10,115,10,45">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Фамилия" Binding="{Binding Path=EmplPosition.Name}" />
-                <DataGridTextColumn Header="Имя" Binding="{Binding Path=WorkwearDirectory.Name}" />
-                <DataGridTextColumn Header="Отчество" Binding="{Binding Path=WorkwearDirectory.Category}" />
-                <DataGridTextColumn Header="Пол" Binding="{Binding Path=WorkwearDirectory.Description}" />
-                <DataGridTextColumn Header="Цех" Binding="{Binding Path=WorkwearDirectory.Unit}" />
-                <DataGridTextColumn Header="Должность" Binding="{Binding Path=WorkwearDirectory.Unit}" />
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding Path=Surname}" />
+                <DataGridTextColumn Header="Имя" Binding="{Binding Path=Name}" />
+                <DataGridTextColumn Header="Отчество" Binding="{Binding Path=Patronymic}" />
+                <DataGridTextColumn Header="Пол" Binding="{Binding Path=Sex}" />
+                <DataGridTextColumn Header="Цех" Binding="{Binding Path=Manufactory.Name}" />
+                <DataGridTextColumn Header="Должность" Binding="{Binding Path=EmplPosition.Name}" />
 
             </DataGrid.Columns>
         </DataGrid>
@@ -36,20 +36,15 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <Button x:Name="btnAdd" Content="Добавить" HorizontalAlignment="Left" Margin="17,33,0,0" VerticalAlignment="Top" Width="68" Height="21" />
-        <Button x:Name="btnEdit" Content="Редакт" HorizontalAlignment="Left" Margin="90,33,0,0" VerticalAlignment="Top" Width="68" Height="21"  />
+        <Button x:Name="btnAdd" Content="Добавить" HorizontalAlignment="Left" Margin="17,33,0,0" VerticalAlignment="Top" Width="68" Height="21" Click="btnAdd_Click" />
+        <Button x:Name="btnEdit" Content="Редакт" HorizontalAlignment="Left" Margin="90,33,0,0" VerticalAlignment="Top" Width="68" Height="21" Click="btnEdit_Click"  />
         <Button x:Name="btnRefresh" Content="Обновить" HorizontalAlignment="Left" Margin="379,58,0,0" VerticalAlignment="Top" Width="76" Height="49"/>
-        <Button x:Name="btnDelete" Content="Удалить" HorizontalAlignment="Left" Margin="163,33,0,0" VerticalAlignment="Top" Width="68" Height="21" />
-        <Button x:Name="btnSearchP" Content="Поиск" HorizontalAlignment="Left" Margin="320,58,0,0" VerticalAlignment="Top" Width="54" Height="22" />
+        <Button x:Name="btnDelete" Content="Удалить" HorizontalAlignment="Left" Margin="163,33,0,0" VerticalAlignment="Top" Width="68" Height="21" Click="btnDelete_Click" />
+        <Button x:Name="btnSearchP" Content="Поиск" HorizontalAlignment="Left" Margin="320,58,0,0" VerticalAlignment="Top" Width="54" Height="22" Click="btnSearchP_Click" />
         <Label x:Name="lblNameP" Content="Должность:" HorizontalAlignment="Left" Margin="18,55,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="cbEmplPosition" HorizontalAlignment="Left" Margin="95,58,0,0" VerticalAlignment="Top" Width="220" ItemsSource="{Binding}" DisplayMemberPath="Name" />
-        <Button x:Name="btnSearchN" Content="Поиск" HorizontalAlignment="Left" Margin="320,85,0,0" VerticalAlignment="Top" Width="54" Height="22" />
-        <Label x:Name="lblName" Content="Фамилия:" HorizontalAlignment="Left" Margin="18,82,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cbEmplPosition_Copy" HorizontalAlignment="Left" Margin="95,85,0,0" VerticalAlignment="Top" Width="220" ItemsSource="{Binding}" DisplayMemberPath="Name" />
-
-
-
-
-
+        <Button x:Name="btnSearchN" Content="Поиск" HorizontalAlignment="Left" Margin="320,85,0,0" VerticalAlignment="Top" Width="54" Height="22" Click="btnSearchN_Click" />
+        <Label x:Name="lblName" Content="Фамилия :" HorizontalAlignment="Left" Margin="18,82,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbPerson" HorizontalAlignment="Left" Margin="95,85,0,0" VerticalAlignment="Top" Width="220" ItemsSource="{Binding}" DisplayMemberPath="Surname" />
     </Grid>
 </Window>

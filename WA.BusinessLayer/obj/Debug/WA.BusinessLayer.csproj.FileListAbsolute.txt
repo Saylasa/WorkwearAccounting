@@ -9,3 +9,16 @@ D:\GIT\WorkwearAccounting\WA.BusinessLayer\bin\Debug\WA.DataAccess.pdb
 D:\GIT\WorkwearAccounting\WA.BusinessLayer\bin\Debug\WA.Dto.pdb
 D:\GIT\WorkwearAccounting\WA.BusinessLayer\obj\Debug\WA.BusinessLayer.dll
 D:\GIT\WorkwearAccounting\WA.BusinessLayer\obj\Debug\WA.BusinessLayer.pdb
+D:\GitHub\WorkwearAccounting\WA.BusinessLayer\bin\Debug\WA.BusinessLayer.dll
+D:\GitHub\WorkwearAccounting\WA.BusinessLayer\bin\Debug\WA.BusinessLayer.pdb
+D:\GitHub\WorkwearAccounting\WA.BusinessLayer\bin\Debug\System.Net.Http.dll
+D:\GitHub\WorkwearAccounting\WA.BusinessLayer\bin\Debug\WA.DataAccess.dll
+D:\GitHub\WorkwearAccounting\WA.BusinessLayer\bin\Debug\WA.Dto.dll
+D:\GitHub\WorkwearAccounting\WA.BusinessLayer\bin\Debug\WA.DataAccess.pdb
+D:\GitHub\WorkwearAccounting\WA.BusinessLayer\bin\Debug\WA.Dto.pdb
+D:\GitHub\WorkwearAccounting\WA.BusinessLayer\bin\Debug\System.Net.Http.xml
+D:\GitHub\WorkwearAccounting\WA.BusinessLayer\obj\Debug\WA.BusinessLayer.csprojResolveAssemblyReference.cache
+D:\GitHub\WorkwearAccounting\WA.BusinessLayer\obj\Debug\WA.BusinessLayer.Properties.Resources.resources
+D:\GitHub\WorkwearAccounting\WA.BusinessLayer\obj\Debug\WA.BusinessLayer.csproj.GenerateResource.Cache
+D:\GitHub\WorkwearAccounting\WA.BusinessLayer\obj\Debug\WA.BusinessLayer.dll
+D:\GitHub\WorkwearAccounting\WA.BusinessLayer\obj\Debug\WA.BusinessLayer.pdb

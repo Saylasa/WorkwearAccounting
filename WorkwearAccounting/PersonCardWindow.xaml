@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WorkwearAccounting"
         mc:Ignorable="d"
-        Title="PersonCardWindow" Height="403.374" Width="676.362">
+        Title="Личная карточка учета" Height="651.35" Width="676.362">
     <Grid>
         <Label Content="Ф. И. О." HorizontalAlignment="Left" Margin="17,18,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbAmount_Copy" HorizontalAlignment="Left" Height="23" Margin="73,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249"/>
+        <TextBox x:Name="tbName" HorizontalAlignment="Left" Height="23" Margin="73,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249"/>
         <Label Content="Цех" HorizontalAlignment="Left" Margin="17,47,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbAmount_Copy1" HorizontalAlignment="Left" Height="23" Margin="73,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249"/>
+        <TextBox x:Name="tbManufactory" HorizontalAlignment="Left" Height="23" Margin="73,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249"/>
         <Label Content="Долж." HorizontalAlignment="Left" Margin="17,77,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbAmount_Copy2" HorizontalAlignment="Left" Height="23" Margin="73,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249"/>
+        <TextBox x:Name="tbEmplPosition" HorizontalAlignment="Left" Height="23" Margin="73,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249"/>
         <Label Content="Пол" HorizontalAlignment="Left" Margin="344,10,0,0" VerticalAlignment="Top" Height="23"/>
         <Label Content="Размер одежды" HorizontalAlignment="Left" Margin="344,30,0,0" VerticalAlignment="Top" Height="28"/>
         <Label Content="Рост" HorizontalAlignment="Left" Margin="344,117,0,0" VerticalAlignment="Top" Height="23"/>
@@ -20,23 +20,31 @@
         <Label Content="Размер перчаток" HorizontalAlignment="Left" Margin="344,73,0,0" VerticalAlignment="Top" Height="27"/>
         <Label Content="Размер гол. убора" HorizontalAlignment="Left" Margin="344,95,0,0" VerticalAlignment="Top" Height="27"/>
 
-        <DataGrid x:Name="dgNorm" IsReadOnly="True" AutoGenerateColumns="False" Visibility="Visible" Margin="10,157,10,10">
+        <DataGrid x:Name="dgIssued" IsReadOnly="True" AutoGenerateColumns="False" Visibility="Visible" Margin="10,157,10,289">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="№ Карт" Binding="{Binding Path=EmplPosition.Name}" Width="70"/>
-                <DataGridTextColumn Header="Наименование" Binding="{Binding Path=WorkwearDirectory.Name}" Width="301"/>
-                <DataGridTextColumn Header="Ед. изм." Binding="{Binding Path=WorkwearDirectory.Category}" Width="70"/>
-                <DataGridTextColumn Header="Срок" Binding="{Binding Path=WorkwearDirectory.Description}" Width="70"/>
-                <DataGridTextColumn Header="Норма" Binding="{Binding Path=WorkwearDirectory.Unit}" Width="70"/>
-                <DataGridTextColumn Header="Выдано" Binding="{Binding Path=WorkwearDirectory.Unit}" Width="70"/>
+                <DataGridTextColumn Header="Наименование" Binding="{Binding Path=Revenue.WorkwearDirectory.Name}" Width="380"/>
+                <DataGridTextColumn Header="Ед. изм." Binding="{Binding Path=Revenue.WorkwearDirectory.Unit}" Width="70"/>
+                <DataGridTextColumn Header="Дата выдачи." Binding="{Binding Path=Date_Issued}" Width="100"/>
+                <DataGridTextColumn Header="Срок носки" Binding="{Binding Path=Revenue.WorkwearDirectory.TimeOfWear}" Width="96"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Label x:Name="lbSex" Content="" HorizontalAlignment="Left" Margin="484,10,0,0" VerticalAlignment="Top" Height="23"/>
-        <Label x:Name="lbClothes" Content="" HorizontalAlignment="Left" Margin="484,30,0,0" VerticalAlignment="Top" Height="28"/>
-        <Label x:Name="lbHeigh" Content="" HorizontalAlignment="Left" Margin="484,117,0,0" VerticalAlignment="Top" Height="23"/>
-        <Label x:Name="lbShoe" Content="" HorizontalAlignment="Left" Margin="484,53,0,0" VerticalAlignment="Top" Height="27"/>
-        <Label x:Name="lbGlove" Content="" HorizontalAlignment="Left" Margin="484,73,0,0" VerticalAlignment="Top" Height="27"/>
-        <Label x:Name="lbHead" Content="" HorizontalAlignment="Left" Margin="484,95,0,0" VerticalAlignment="Top" Height="27"/>
         <Button x:Name="btnAddWorkwear" Content="Добавить" HorizontalAlignment="Left" Height="21" Margin="10,131,0,0" VerticalAlignment="Top" Width="71" Click="btnAddWorkwear_Click" />
-        <Button x:Name="btnReturn" Content="Возврат на склад" HorizontalAlignment="Left" Height="21" Margin="86,131,0,0" VerticalAlignment="Top" Width="108"/>
+        <Button x:Name="btnReturn" Content="Возврат на склад" HorizontalAlignment="Left" Height="21" Margin="86,131,0,0" VerticalAlignment="Top" Width="108" Click="btnReturn_Click"/>
+        <Label x:Name="lblSex" Content="Пол" HorizontalAlignment="Left" Margin="459,10,0,0" VerticalAlignment="Top" Height="23"/>
+        <Label x:Name="lblClothes" Content="Размер одежды" HorizontalAlignment="Left" Margin="459,30,0,0" VerticalAlignment="Top" Height="28"/>
+        <Label x:Name="lblHeigh" Content="Рост" HorizontalAlignment="Left" Margin="459,117,0,0" VerticalAlignment="Top" Height="23"/>
+        <Label x:Name="lblShoe" Content="Размер обуви" HorizontalAlignment="Left" Margin="459,53,0,0" VerticalAlignment="Top" Height="27"/>
+        <Label x:Name="lblGlove" Content="Размер перчаток" HorizontalAlignment="Left" Margin="459,73,0,0" VerticalAlignment="Top" Height="27"/>
+        <Label x:Name="lblHead" Content="Размер гол. убора" HorizontalAlignment="Left" Margin="459,95,0,0" VerticalAlignment="Top" Height="27"/>
+        <DataGrid x:Name="dgNorm" IsReadOnly="True" AutoGenerateColumns="False" Visibility="Visible" Margin="10,363,10,10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Наименование" Binding="{Binding WorkwearDirectory.Name}" Width="476"/>
+                <DataGridTextColumn Header="Ед. изм." Binding="{Binding WorkwearDirectory.Category}" Width="70"/>
+                <DataGridTextColumn Header="Срок носки" Binding="{Binding WorkwearDirectory.Description}" Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Нормы выдачи:" HorizontalAlignment="Left" Margin="10,333,0,0" VerticalAlignment="Top" Height="27"/>
+        <Label Content="Выдано:" HorizontalAlignment="Left" Margin="199,128,0,0" VerticalAlignment="Top" Height="27"/>
+        <Button x:Name="btnRefresh" Content="Обнов" HorizontalAlignment="Left" Height="21" Margin="599,131,0,0" VerticalAlignment="Top" Width="59" Click="btnRefresh_Click"/>
     </Grid>
 </Window>

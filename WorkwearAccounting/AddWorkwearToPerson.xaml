@@ -5,18 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WorkwearAccounting"
         mc:Ignorable="d"
-        Title="AddWorkwearToPerson" Height="314.894" Width="473.404">
+        Title="AddWorkwearToPerson" Height="413.803" Width="780.224">
     <Grid>
-        <DataGrid x:Name="dgEmplPosition" IsReadOnly="True" AutoGenerateColumns="False" Visibility="Visible" Margin="10,10,10,41">
+        <DataGrid x:Name="dgRevenue" IsReadOnly="True" AutoGenerateColumns="False" Visibility="Visible" Margin="10,10,10,41">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Номер" Binding="{Binding Path=Name}" Width="60"/>
-                <DataGridTextColumn Header="Название" Binding="{Binding Path=Manufactory.Name}" Width="100" />
-                <DataGridTextColumn Header="Описание" Binding="{Binding Path=Manufactory.Name}" Width="250"/>
-                <DataGridTextColumn Header="Ед." Binding="{Binding Path=Manufactory.Name}" Width="60"/>
+                <DataGridTextColumn Header="Номер" Binding="{Binding Path=Id}" Width="60"/>
+                <DataGridTextColumn Header="Название" Binding="{Binding Path=WorkwearDirectory.Name}" Width="300" />
+                <DataGridTextColumn Header="Описание" Binding="{Binding Path=WorkwearDirectory.Description}" Width="330"/>
+                <DataGridTextColumn Header="Ед." Binding="{Binding Path=WorkwearDirectory.Unit}" Width="60"/>
 
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="btnSelect" Content="Выбор" HorizontalAlignment="Left" Height="23" Margin="10,252,0,0" VerticalAlignment="Top" Width="79"/>
-        <Button x:Name="btnCancel" Content="Отмена" HorizontalAlignment="Left" Height="23" Margin="94,252,0,0" VerticalAlignment="Top" Width="79"/>
+        <Button x:Name="btnSelect" Content="Выбор" HorizontalAlignment="Left" Height="23" Margin="11,350,0,0" VerticalAlignment="Top" Width="79" Click="btnSelect_Click"/>
+        <Button x:Name="btnCancel" Content="Отмена" HorizontalAlignment="Left" Height="23" Margin="95,350,0,0" VerticalAlignment="Top" Width="79" Click="btnCancel_Click"/>
     </Grid>
 </Window>
